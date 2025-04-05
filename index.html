@@ -3,84 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Axora Discord Bot - Documentation</title>
+    <title>Axora Docs - Discord Bot Documentation</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="notification-bar">
+    <div class="notification-banner">
         <div class="notification-content">
             <i class="fa-solid fa-circle-check"></i>
-            <span>Axora Discord Bot is ready for use!</span>
+            <span>Axora is ready for use!</span>
         </div>
         <button class="close-notification"><i class="fa-solid fa-xmark"></i></button>
     </div>
 
     <div class="container">
         <aside class="sidebar">
-            <div class="logo-container">
-                <img src="images/logo.svg" alt="Axora Logo" class="logo">
-                <h1 class="logo-text">Axora Docs</h1>
-            </div>
-
-            <div class="search-container-mobile">
-                <div class="search-box">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="text" placeholder="Search documentation...">
-                    <div class="keyboard-shortcut">
-                        <span>Ctrl</span>
-                        <span>K</span>
-                    </div>
+            <div class="sidebar-header">
+                <div class="logo">
+                    <img src="images/axora-logo.png" alt="Axora Logo">
+                    <h2>Axora Docs</h2>
                 </div>
+                <button class="mobile-toggle" id="sidebarToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </div>
-
+            
             <nav class="sidebar-nav">
                 <div class="nav-section">
                     <div class="section-header">
-                        <i class="fa-solid fa-hand-wave"></i>
+                        <i class="fa-solid fa-house"></i>
                         <span>WELCOME</span>
                     </div>
-                    <ul class="nav-links">
+                    <ul>
                         <li class="active"><a href="index.html">Welcome to Axora Docs</a></li>
                     </ul>
                 </div>
 
                 <div class="nav-section">
                     <div class="section-header">
-                        <i class="fa-solid fa-book-open"></i>
-                        <span>GETTING STARTED</span>
+                        <i class="fa-solid fa-book"></i>
+                        <span>HOW TO USE</span>
                     </div>
-                    <ul class="nav-links">
-                        <li><a href="setup.html">Setup & Installation</a></li>
-                        <li><a href="permissions.html">Permissions</a></li>
-                        <li><a href="configuration.html">Configuration</a></li>
-                    </ul>
-                </div>
-
-                <div class="nav-section">
-                    <div class="section-header">
-                        <i class="fa-solid fa-terminal"></i>
-                        <span>COMMANDS</span>
-                    </div>
-                    <ul class="nav-links">
-                        <li><a href="basic-commands.html">Basic Commands</a></li>
-                        <li><a href="moderation.html">Moderation</a></li>
-                        <li><a href="music.html">Music</a></li>
-                        <li><a href="fun.html">Fun & Games</a></li>
-                        <li><a href="utility.html">Utility</a></li>
-                    </ul>
-                </div>
-
-                <div class="nav-section">
-                    <div class="section-header">
-                        <i class="fa-solid fa-code"></i>
-                        <span>DEVELOPER</span>
-                    </div>
-                    <ul class="nav-links">
-                        <li><a href="api.html">API Reference</a></li>
-                        <li><a href="webhooks.html">Webhooks</a></li>
-                        <li><a href="custom-commands.html">Custom Commands</a></li>
+                    <ul>
+                        <li><a href="setup.html">Setup</a></li>
                     </ul>
                 </div>
 
@@ -89,142 +55,105 @@
                         <i class="fa-solid fa-scale-balanced"></i>
                         <span>LEGAL</span>
                     </div>
-                    <ul class="nav-links">
+                    <ul>
                         <li><a href="terms.html">Terms of Service</a></li>
                         <li><a href="privacy.html">Privacy Policy</a></li>
                     </ul>
                 </div>
             </nav>
-
-            <div class="theme-toggle">
-                <button id="theme-toggle-btn">
-                    <i class="fa-solid fa-sun light-icon"></i>
-                    <i class="fa-solid fa-moon dark-icon"></i>
-                </button>
-            </div>
         </aside>
 
         <main class="content">
-            <header class="content-header">
-                <button class="menu-toggle" id="menu-toggle">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-                
-                <div class="search-container">
-                    <div class="search-box">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <input type="text" placeholder="Ask or search...">
-                        <div class="keyboard-shortcut">
-                            <span>Ctrl</span>
-                            <span>K</span>
-                        </div>
+            <div class="search-container">
+                <div class="search-bar">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="text" placeholder="Ask or search...">
+                    <div class="keyboard-shortcut">
+                        <span>Ctrl</span>
+                        <span>K</span>
                     </div>
                 </div>
-            </header>
+            </div>
 
             <div class="breadcrumb">
-                <i class="fa-solid fa-hand-wave"></i>
+                <i class="fa-solid fa-house"></i>
                 <span>WELCOME</span>
             </div>
 
-            <article class="article">
-                <h1 class="article-title">Welcome to Axora Discord Bot</h1>
+            <div class="content-container">
+                <h1>Welcome to Axora Docs</h1>
 
-                <p class="article-intro">
-                    Thanks for checking out <strong>Axora</strong> — a versatile Discord bot designed to enhance your server experience with powerful features and intuitive commands.
+                <p class="intro-text">
+                    Thanks for checking out <strong>Axora</strong> — a personal AI project inspired by Character AI, but built from the ground up to be something different.
                 </p>
 
                 <p>
-                    Axora is designed to be flexible, fast, and easy to use. Whether you're looking to moderate your server, play music, run fun games, or create custom commands, this documentation will walk you through everything you need to know.
+                    Axora is designed to be flexible, fast, and easy to use. Whether you're here to chat with unique AI characters or looking to understand how the bot works behind the scenes, this documentation will walk you through everything.
                 </p>
 
-                <div class="info-box">
-                    <h3>Here, you'll find:</h3>
-                    <ul class="feature-list">
+                <div class="features-section">
+                    <p>Here, you'll find:</p>
+                    <ul>
                         <li>
-                            <div class="feature-icon pink">
-                                <i class="fa-brands fa-discord"></i>
+                            <div class="feature-icon chat-icon">
+                                <i class="fa-solid fa-comments"></i>
                             </div>
-                            <span>How to add Axora to your Discord server</span>
+                            <span>How Axora works and how to interact with it</span>
                         </li>
                         <li>
-                            <div class="feature-icon blue">
-                                <i class="fa-solid fa-sliders"></i>
+                            <div class="feature-icon config-icon">
+                                <i class="fa-solid fa-gear"></i>
                             </div>
-                            <span>Configuration and permission guides</span>
+                            <span>Configuration and setup guides</span>
                         </li>
                         <li>
-                            <div class="feature-icon green">
-                                <i class="fa-solid fa-terminal"></i>
+                            <div class="feature-icon dev-icon">
+                                <i class="fa-solid fa-code"></i>
                             </div>
-                            <span>Complete command reference and examples</span>
+                            <span>Developer tools and integration options</span>
                         </li>
                         <li>
-                            <div class="feature-icon red">
-                                <i class="fa-solid fa-triangle-exclamation"></i>
+                            <div class="feature-icon support-icon">
+                                <i class="fa-solid fa-life-ring"></i>
                             </div>
                             <span>Troubleshooting tips and support info</span>
                         </li>
                     </ul>
                 </div>
 
-                <div class="discord-preview">
-                    <div class="discord-header">
-                        <i class="fa-brands fa-discord"></i>
-                        <span>Discord Preview</span>
-                    </div>
-                    <div class="discord-content">
-                        <div class="discord-message">
-                            <div class="discord-avatar">
-                                <img src="images/user-avatar.svg" alt="User Avatar">
-                            </div>
-                            <div class="discord-message-content">
-                                <div class="discord-username">CoolUser<span class="discord-timestamp">Today at 12:34 PM</span></div>
-                                <div class="discord-text">!help</div>
-                            </div>
-                        </div>
-                        <div class="discord-message bot-message">
-                            <div class="discord-avatar">
-                                <img src="images/logo.svg" alt="Axora Bot">
-                            </div>
-                            <div class="discord-message-content">
-                                <div class="discord-username">Axora Bot<span class="discord-bot-tag">BOT</span><span class="discord-timestamp">Today at 12:34 PM</span></div>
-                                <div class="discord-embed">
-                                    <div class="discord-embed-title">Axora Help Menu</div>
-                                    <div class="discord-embed-description">
-                                        Here are my available command categories:
-                                    </div>
-                                    <div class="discord-embed-fields">
-                                        <div class="discord-embed-field">
-                                            <div class="discord-embed-field-name">📋 Basic</div>
-                                            <div class="discord-embed-field-value">!help, !info, !ping, !invite</div>
-                                        </div>
-                                        <div class="discord-embed-field">
-                                            <div class="discord-embed-field-name">🛡️ Moderation</div>
-                                            <div class="discord-embed-field-value">!ban, !kick, !mute, !warn</div>
-                                        </div>
-                                        <div class="discord-embed-field">
-                                            <div class="discord-embed-field-name">🎵 Music</div>
-                                            <div class="discord-embed-field-value">!play, !skip, !queue, !stop</div>
-                                        </div>
-                                    </div>
-                                    <div class="discord-embed-footer">
-                                        Type !help [category] for more info
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="project-info">
                     <p>
-                        This is a solo-built project with a focus on creating a reliable, feature-rich Discord bot experience. Axora is constantly evolving, and your feedback helps shape its future.
+                        This is a solo-built project — separate from Cloud LLC — with a focus on innovation and experimentation. Axora is still evolving, and your feedback helps shape its future.
                     </p>
-                    <p class="highlight">
-                        Let's make your Discord server awesome!
-                    </p>
+                    <p class="tagline">Let's build something cool.</p>
                 </div>
 
-                <div class="quick-actions">
-                    <a href="https://discord.com/oauth2/authorize?client_id=123456789&scope=bot&permissions=8" class="action-button primary
+                <div class="navigation-buttons">
+                    <a href="setup.html" class="next-button">
+                        <div>
+                            <span class="nav-label">Next</span>
+                            <span class="nav-title">Setup</span>
+                        </div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </div>
+
+                <div class="page-meta">
+                    <span>Last updated 2 hours ago</span>
+                </div>
+
+                <div class="feedback-section">
+                    <span>Was this helpful?</span>
+                    <div class="feedback-buttons">
+                        <button class="feedback-btn"><i class="fa-regular fa-thumbs-up"></i></button>
+                        <button class="feedback-btn"><i class="fa-regular fa-thumbs-down"></i></button>
+                        <button class="feedback-btn"><i class="fa-regular fa-comment"></i></button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
