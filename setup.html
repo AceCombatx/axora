@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Axora Docs - Discord Bot Documentation</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Setup - Axora Docs</title>
+    <link rel="stylesheet" href="axora-styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -36,7 +36,7 @@
                         <span>WELCOME</span>
                     </div>
                     <ul>
-                        <li class="active"><a href="index.html">Welcome to Axora Docs</a></li>
+                        <li><a href="index.html">Welcome to Axora Docs</a></li>
                     </ul>
                 </div>
 
@@ -46,7 +46,7 @@
                         <span>HOW TO USE</span>
                     </div>
                     <ul>
-                        <li><a href="setup.html">Setup</a></li>
+                        <li class="active"><a href="setup.html">Setup</a></li>
                     </ul>
                 </div>
 
@@ -76,16 +76,107 @@
             </div>
 
             <div class="breadcrumb">
-                <i class="fa-solid fa-house"></i>
-                <span>WELCOME</span>
+                <i class="fa-solid fa-book"></i>
+                <span>HOW TO USE</span>
             </div>
 
             <div class="content-container">
-                <h1>Welcome to Axora Docs</h1>
+                <h1>Setup</h1>
 
-                <p class="intro-text">
-                    Thanks for checking out <strong>Axora</strong> — a personal AI project inspired by Character AI, but built from the ground up to be something different.
-                </p>
+                <div class="setup-section">
+                    <h2>Adding Axora to Your Discord Server</h2>
+                    <p>Getting started with Axora is simple. Follow these steps to add the bot to your Discord server:</p>
+                    
+                    <div class="steps-container">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>Visit the Invite Link</h3>
+                                <p>Go to <a href="https://discord.com/oauth2/authorize?client_id=BOTID&permissions=8&scope=bot%20applications.commands" class="external-link">Axora's invite page</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>Select Your Server</h3>
+                                <p>Choose the server where you want to add Axora from the dropdown menu</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>Authorize the Bot</h3>
+                                <p>Review the permissions and click "Authorize"</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h3>Complete Verification</h3>
+                                <p>Complete any CAPTCHA verification if prompted</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                <p>
-                    Axora is designed to be flexible, fast, and easy to use. Whether you're here to chat with uniqu
+                <div class="configuration-section">
+                    <h2>Initial Configuration</h2>
+                    <p>Once Axora is in your server, you'll want to configure it for optimal use:</p>
+                    
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span>Basic Commands</span>
+                            <button class="copy-button"><i class="fa-regular fa-copy"></i></button>
+                        </div>
+                        <pre><code>/setup - Run the initial setup wizard
+/config - Access configuration options
+/help - View all available commands</code></pre>
+                    </div>
+                    
+                    <div class="note-box">
+                        <div class="note-icon"><i class="fa-solid fa-circle-info"></i></div>
+                        <div class="note-content">
+                            <p><strong>Note:</strong> Axora requires the "Administrator" permission to function properly. If you're concerned about permissions, you can create a dedicated role with limited access.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navigation-buttons">
+                    <a href="index.html" class="prev-button">
+                        <i class="fa-solid fa-chevron-left"></i>
+                        <div>
+                            <span class="nav-label">Previous</span>
+                            <span class="nav-title">Welcome to Axora Docs</span>
+                        </div>
+                    </a>
+                    <a href="terms.html" class="next-button">
+                        <div>
+                            <span class="nav-label">Next</span>
+                            <span class="nav-title">Terms of Service</span>
+                        </div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </div>
+
+                <div class="page-meta">
+                    <span>Last updated 1 day ago</span>
+                </div>
+
+                <div class="feedback-section">
+                    <span>Was this helpful?</span>
+                    <div class="feedback-buttons">
+                        <button class="feedback-btn"><i class="fa-regular fa-thumbs-up"></i></button>
+                        <button class="feedback-btn"><i class="fa-regular fa-thumbs-down"></i></button>
+                        <button class="feedback-btn"><i class="fa-regular fa-comment"></i></button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="axora-main.js"></script>
+</body>
+</html>
